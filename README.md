@@ -24,20 +24,20 @@ This program was made using the Chipmunk Android Studio. The main executor is th
 
 left. 
 
-- Extra features  
+- ### Extra features  
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.004.png) Clicked buttons have a red ripple effect to show what was clicked.
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.004.png) Exit game button requires long press so user doesn’t accidently click on it.
 
-Data Structures Used 
+## Data Structures Used 
 
 - A vector of strings was the primary used data structure, and it was used for the following pieces: boneyard, hand, and stack. 
 - A vector of Players was used in implementing the polymorphic behavior in the game. 
 
-Classes 
+## Classes 
 
-- Round class (Handles the player models of the GUI) 
+- ### Round class (Handles the player models of the GUI) 
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.005.png)This class is responsible for all information about a round including who won the 
 
@@ -46,7 +46,7 @@ round, who won the tournament, saving the game (SERIALIZATION of a tournament), 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.005.png)Compositions: 
 
 - player\_list: Vector of player pointers so that players can interact in the round polymorphically 
-- Game class (Handles the start of the GUI) 
+- ### Game class (Handles the start of the GUI) 
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.005.png)This class is responsible for running the entire game; everything from the 
 
@@ -54,7 +54,7 @@ welcome menu, playing a new game/tournament, and loading in a game from a serial
 
 - player\_list: Vector of player pointers so that players can interact in the round polymorphically. 
   - memory: Vector of strings used for reading in a SERIALIZATION file at each line and storing them.
-- Domino class 
+- ### Domino class 
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.005.png)This class is responsible for handling all of the domino capabilities such as stacks, 
 
@@ -64,7 +64,7 @@ boneyards, and hands. In addition, it handles subsequent functions like determin
 - stack: Vector of strings used for holding the tiles in the stack
 - hand: Vector of strings used for holding the tiles in the hand
 - selected\_bone: String is used for holding the domino that was selected 
-- Player class  
+- ### Player class  
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.005.png)This class is the base class for each player. It handles all of the important player 
 
@@ -73,23 +73,23 @@ abilities like being able to call all of the important domino functions as well 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.005.png)Compositions:
 
 - Table: Domino object used for the player which is able to interact with said dominoes.
-- Human class  
+- ### Human class  
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.005.png)This class is one of the two derived classes of the player class. It provides its own 
 
 input validation (user taps input based on button clicking) for selection and making a move (polymorphism). All of the functions are from the player class. 
 
-- Computer class  
+- ### Computer class  
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.005.png)This class is one of the two derived classes of the player class. It provides its own 
 
 input validation (computer generates its own input) for selection and making a move (polymorphism). Most of the functions are from the player class, but computer also has ai\_decison function used for coming up with the domino selection (POLYMORPHIC) and will always return 2 (make a move since computer will ALWAYS play to win).
 
-Log 
+## Log 
 
 Since this project used a GUI, I completed this project twice; once in Eclipse (AKA ASCII) for the model M and again in Android for the view/controller VC to combine them to make an efficient MVC controlled program.  
 
-- ASCII: 
+- # ASCII: 
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.004.png) 3/13/2023 Created an Eclipse Hello World project and attempted to wrap 
 
@@ -103,7 +103,7 @@ Computer files from C++ to JAVA  5 hours each day
 
 correctness of model took a total of 8 hours 
 
-- GUI 
+- # GUI 
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.004.png) 3/17/2023 Created Hello World Android app and imported converted files 
 
