@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Collin Schumacher Buildup</string>
+    <string name="game">game</string>
+    <string name="_1st_player_object">1st player object</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game">
+
+    <SurfaceView
+        android:id="@+id/surfaceView2"
+        android:layout_width="480dp"
+        android:layout_height="1052dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="75dp"
+        android:foreground="?attr/colorSecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247"
+        app:layout_marginBaseline="0dp" />
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serialize"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:editable="false"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        android:text="please choose a file from the dropdown"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/surfaceView2"
+        app:layout_constraintVertical_bias="0.426"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="231dp"
+        android:layout_height="119dp"
+        android:text=" "
+        android:textColor="#FF0000"
+
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title"
+        app:layout_constraintVertical_bias="0.998"
+
+        />
+
+
+    <Button
+        android:id="@+id/f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0000FF"
+        android:text="click me to read the file"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169"
+        app:rippleColor="#FF0101"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/f2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0000FF"
+        android:text="click me to continue"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762"
+        app:rippleColor="#FF0101"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/Player_one_name"
+        android:layout_width="207dp"
+        android:layout_height="22dp"
+        android:text="@string/_1st_player_object"
+        android:textColor="@color/black"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <TextView
+        android:id="@+id/Player_two_name"
+        android:layout_width="218dp"
+        android:layout_height="23dp"
+        android:text="2nd player object"
+        android:textColor="@color/black"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.503" />
+
+    <Button
+        android:id="@+id/W1"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.089"
+        app:rippleColor="#FF0101" />
+
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.603"
+        app:rippleColor="#FF0101" />
+
+    <Button
+        android:id="@+id/W2"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+
+        app:layout_constraintVertical_bias="0.09"
+        app:rippleColor="#FF0101" />
+
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+
+        app:layout_constraintVertical_bias="0.603"
+        app:rippleColor="#FF0101" />
+    <Button
+        android:id="@+id/W3"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+
+        app:layout_constraintVertical_bias="0.089"
+        app:rippleColor="#FF0101" />
+
+    <Button
+        android:id="@+id/B3"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+
+        app:layout_constraintVertical_bias="0.603"
+        app:rippleColor="#FF0101" />
+    <Button
+        android:id="@+id/W4"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.164"
+        app:rippleColor="#FF0101" />
+
+    <Button
+        android:id="@+id/B4"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.673"
+        app:rippleColor="#FF0101" />
+    <Button
+        android:id="@+id/W5"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.164"
+        app:rippleColor="#FF0101" />
+
+    <Button
+        android:id="@+id/B5"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673"
+        android:visibility="gone"
+
+        app:rippleColor="#FF0101" />
+    <Button
+        android:id="@+id/W6"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        app:rippleColor="#FF0101" />
+
+    <Button
+        android:id="@+id/B6"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+
+        app:layout_constraintVertical_bias="0.673"
+        app:rippleColor="#FF0101" />
+    <TextView
+        android:id="@+id/CStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stacks:"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/HStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stacks:"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/Cboneyard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boneyard: "
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+    <TextView
+        android:id="@+id/Hboneyard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boneyard: "
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/CB"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        app:rippleColor="#FF0101" />
+    <Button
+        android:id="@+id/HB"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:clickable="false"
+        android:text="Domino"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#FF0101" />
+    <TextView
+        android:id="@+id/Hhand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hand:"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/Chand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hand:"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/Cbone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
+    <TextView
+        android:id="@+id/Hscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+    <TextView
+        android:id="@+id/Crounds_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rounds Won: "
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+    <TextView
+        android:id="@+id/Hrounds_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rounds Won: "
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <Spinner
+        android:id="@+id/menu"
+        android:layout_width="308dp"
+        android:layout_height="32dp"
+        android:background="#020202"
+        android:textColor="@color/white"
+        app:rippleColor="#FF0101"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>
