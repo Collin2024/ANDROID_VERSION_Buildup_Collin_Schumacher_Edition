@@ -119,7 +119,9 @@ to get the GUI to display the current state of the game (NOT INCLUDING AFTER MOV
 
 (Round GUI)) and having the domino change its text and color to its new 
 
-respective state to correctly match its model e.g: B06 on W05. 8 hours each day ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.004.png) 3/28/2023 Players now alternate up until a hand is empty then terminates. 
+respective state to correctly match its model e.g: B06 on W05. 8 hours each day 
+
+![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.004.png) 3/28/2023 Players now alternate up until a hand is empty then terminates. 
 
 5 hours 
 
