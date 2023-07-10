@@ -15,8 +15,8 @@ The objective of this game is to score the highest after the final hand in a rou
 Two players play this game - one player will be the human user of the program, and the other player will be the program/computer. The two players will play a "tournament", consisting of one or more rounds. Each round will consist of the two players playing four hands, each hand consisting of 4-6 tiles.
 ### The Setup
 The game uses two double-six sets. A double-six set contains 28 tiles. Each tile has two ends, each end containing 0-6 pips. The double-six set contains tiles with the following combination of pips:
-0-0, 0-1, 0-2, 0-3, 0-4, 0-5, 0-6, 
 
+0-0, 0-1, 0-2, 0-3, 0-4, 0-5, 0-6, 
 1-1, 1-2, 1-3, 1-4, 1-5, 1-6,
 
 2-2, 2-3, 2-4, 2-5, 2-6,
