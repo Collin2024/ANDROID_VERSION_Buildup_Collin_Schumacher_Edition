@@ -135,7 +135,7 @@ input validation (computer generates its own input) for selection and making a m
 
 Since this project used a GUI, I completed this project twice; once in Eclipse (AKA ASCII) for the model M and again in Android for the view/controller VC to combine them to make an efficient MVC controlled program.  
 
-- # ASCII: 
+- # ASCII(NOT PROVIDED IN FILES): 
 
 ![](Aspose.Words.c50fcb7b-c095-45a8-9388-b20f2b25e37a.004.png) 3/13/2023 Created an Eclipse Hello World project and attempted to wrap 
 
