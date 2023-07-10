@@ -195,7 +195,7 @@ select the desired file along with cleaning up any detected issues. 4 hours
 
 touches. 9 hours  
 
-Screen shots 
+## Screen shots 
 
 1. Main Menu
 
